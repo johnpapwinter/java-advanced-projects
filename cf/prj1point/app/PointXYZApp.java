@@ -1,6 +1,6 @@
-package gr.aueb.cf.oop.project1.app;
+package cf.prj1point.app;
 
-import gr.aueb.cf.oop.project1.model.PointXYZ;
+import cf.prj1point.model.PointXYZ;
 
 public class PointXYZApp {
     public static void main(String[] args) {

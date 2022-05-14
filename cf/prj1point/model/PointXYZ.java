@@ -1,4 +1,4 @@
-package gr.aueb.cf.oop.project1.model;
+package cf.prj1point.model;
 
 import java.util.Random;
 

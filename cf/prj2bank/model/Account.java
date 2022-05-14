@@ -1,4 +1,4 @@
-package gr.aueb.cf.oop.project2.model;
+package cf.prj2bank.model;
 
 
 import java.io.FileNotFoundException;
@@ -13,15 +13,17 @@ public class Account {
     private long id;
     private String iban;
     private String lastname;
+    private String firstname;
     private String ssn;
     private double balance;
 
     public Account() {}
 
-    public Account(long id, String iban, String lastname, String ssn, double balance) {
+    public Account(long id, String iban, String lastname, String firstname, String ssn, double balance) {
         this.id = id;
         this.iban = iban;
         this.lastname = lastname;
+        this.firstname = firstname;
         this.ssn = ssn;
         this.balance = balance;
     }
@@ -56,6 +58,14 @@ public class Account {
 
     public void setSsn(String ssn) {
         this.ssn = ssn;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
     public double getBalance() {
@@ -128,7 +138,7 @@ public class Account {
      */
     public String getAccountState() {
         return "id: " + id + "\t" + "iban: " + iban + "\t" + "Lastname: " + lastname
-                + "\t" + "ssn: " + ssn + "\t" + "balance: " + balance;
+                + "\t" + "Firstname: " + firstname + "\t" + "ssn: " + ssn + "\t" + "balance: " + balance;
     }
 
 
@@ -137,7 +147,7 @@ public class Account {
      */
     public void printAccountState() {
         System.out.println("id: " + id + "\t" + "iban: " + iban + "\t" + "Lastname: " + lastname
-                + "\t" + "ssn: " + ssn + "\t" + "balance: " + balance);
+                + "\t" + "Firstname: " + firstname  + "\t" + "ssn: " + ssn + "\t" + "balance: " + balance);
     }
 
 }
