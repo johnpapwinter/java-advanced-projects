@@ -51,6 +51,12 @@ public class OverfraftAccount {
     }
 
 
+    /**
+     * takes the balance of a class Account instance and withdraws a specified amount
+     * if the amount if greater than the previous balance, the account holder is charged with credit
+     * it then sends the new balance back to the instance
+     * @param amount
+     */
     public void withdrawOverfraft(double amount) {
         if (!isSsnValid(ssn)) return;
 
